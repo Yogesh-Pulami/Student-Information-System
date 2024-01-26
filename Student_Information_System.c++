@@ -48,7 +48,8 @@ record<<left<<setw(20)<<name;
 int main(){
     Student student;
     cout<<endl<<"Welcome to the student information system!"<<endl<<endl;
-    do{
+    // int choice;
+    // do{
     student.setName();
     student.setID();
     student.setGPA();
@@ -59,7 +60,7 @@ int main(){
     student.getGPA();
      //Student information recode in file
     student.writetofile();
-    }
+    // }while (choice != 0);
     cout<<endl<<"Thank you for using the student information system..."<<endl;
     return 0;
 
