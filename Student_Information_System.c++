@@ -10,7 +10,8 @@ class Student{
     double gpa;
     public:
 void setName(){
-    cout<<"Enter Your Name: ";
+    cout<<endl<<"Enter Your Name: ";
+    cin.ignore();
     getline(cin,name);
 }
 void setID(){
@@ -48,8 +49,13 @@ record<<left<<setw(20)<<name;
 int main(){
     Student student;
     cout<<endl<<"Welcome to the student information system!"<<endl<<endl;
-    // int choice;
-    // do{
+    int i= 0;
+    int no_of_student;
+    //Total Number of Student in a class
+    cout<<"Enter the number of students in a class: ";
+    cin>>no_of_student;
+    //looping
+    do{
     student.setName();
     student.setID();
     student.setGPA();
@@ -60,7 +66,8 @@ int main(){
     student.getGPA();
      //Student information recode in file
     student.writetofile();
-    // }while (choice != 0);
+    i++;//increment of i value
+    }while (i<no_of_student);
     cout<<endl<<"Thank you for using the student information system..."<<endl;
     return 0;
 
