@@ -70,5 +70,4 @@ int main(){
     }while (i<no_of_student);
     cout<<endl<<"Thank you for using the student information system..."<<endl;
     return 0;
-
 }
